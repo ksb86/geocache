@@ -35,8 +35,7 @@ function renderClue() {
     return;
   }
 
-  const normalizedTag = tagId.toLowerCase();
-  const clue = CLUES[normalizedTag];
+  const clue = CLUES[tagId];
 
   if (!clue) {
     statusEl.textContent =
