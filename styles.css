@@ -1,0 +1,84 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color-scheme: light dark;
+  --bg: #0f172a;
+  --fg: #e5e7eb;
+  --accent: #22c55e;
+  --muted: #9ca3af;
+  --card-bg: #020617;
+  --border: #1e293b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #1f2937, #020617);
+  color: var(--fg);
+}
+
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  padding: 1.5rem 1.25rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+  min-height: 130px;
+}
+
+.status {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.clue-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.clue-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.meta {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
